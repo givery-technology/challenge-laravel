@@ -3,9 +3,11 @@ CREATE TABLE IF NOT EXISTS users (
   name varchar(100) NOT NULL,
   password varchar(100) NOT NULL,
   email varchar(100) NOT NULL,
-  birthday date NULL,
+  birthday text NULL,
   company text NULL,
   location text NULL,
+  created_at text NOT NULL,
+  updated_at text NOT NULL,
   UNIQUE (email)
 );
 
