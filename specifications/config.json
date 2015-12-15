@@ -3,7 +3,7 @@
   "database": {
     "client": "sqlite3",
     "connection": {
-      "filename": "./service.db"
+      "filename": "./storage/service.sqlite"
     }
   }
 }
