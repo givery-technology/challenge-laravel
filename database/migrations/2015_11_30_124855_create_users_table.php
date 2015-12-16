@@ -20,7 +20,8 @@ class CreateUsersTable extends Migration
             $table->date('birthday')->nullable();
             $table->string('company')->nullable();
             $table->string('location')->nullable();
-            $table->timestamps();
+            $table->timestamp('created_at')->default('CURRENT_TIMESTAMP');
+            $table->timestamp('updated_at')->default('CURRENT_TIMESTAMP');
         });
     }
 
