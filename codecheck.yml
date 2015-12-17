@@ -1,6 +1,8 @@
 build:
   - composer install
   - npm install
+  - touch storage/service.sqlite
+  - php artisan migrate:refresh
 web:
   command: php artisan serve --port=3000
   port: 3000
