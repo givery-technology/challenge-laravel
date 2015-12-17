@@ -1,0 +1,21 @@
+{
+  "editable": [
+    "app/*",
+    "config/*",
+    "database/*",
+    "public/*",
+    "resources/*",
+    "storage/*",
+    "codecheck.yml",
+    "composer.*",
+    "gulpfile.js",
+    "Gruntfile.js",
+    "package.json",
+    "server.php"
+  ],
+  "exclude": [
+    "challenge.json"
+  ],
+  "allowNewFile": true,
+  "test": "mocha --recursive specifications"
+}
